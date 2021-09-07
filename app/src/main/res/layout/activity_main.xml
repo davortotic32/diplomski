@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:verticalScrollbarPosition="right"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_calendar"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textSize="35dp" />
+
+        <TextClock
+            android:id="@+id/clockTxt"
+            android:layout_width="167dp"
+            android:layout_height="45dp"
+            android:drawableStart="@drawable/ic_time"
+            android:format12Hour="hh:mm"
+            android:shadowColor="#040404"
+            android:text="clock"
+            android:textColor="@android:color/black"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.257"
+        tools:layout_editor_absoluteX="167dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/parking1Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0307FF"
+            android:backgroundTint="#0325FF"
+            android:drawableStart="@drawable/ic_p1"
+            android:text="Parking broj 1"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/ukupno1Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukupno mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/slobono1Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trenutno slobodno mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="#32D338" />
+
+        <TextView
+            android:id="@+id/zauzeto1Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trenutno zauzeto mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="#FD1100" />
+
+        <TextView
+            android:id="@+id/parking2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0307FF"
+            android:backgroundTint="#0325FF"
+            android:drawableStart="@drawable/ic_p2"
+            android:text="Parking broj 2"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/ukupno2Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukupno mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/slobono2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trenutno slobodno mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="#32D338" />
+
+        <TextView
+            android:id="@+id/zauzeto2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trenutno zauzeto mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="#FD1100" />
+
+        <TextView
+            android:id="@+id/parking3Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0307FF"
+            android:backgroundTint="#0325FF"
+            android:drawableStart="@drawable/ic_p3"
+            android:text="Parking broj 3"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/ukupno3Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukupno mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/slobono3Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trenutno slobodno mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="#32D338" />
+
+        <TextView
+            android:id="@+id/zauzeto3Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trenutno zauzeto mjesta na parkingu:"
+            android:textSize="20dp"
+            android:textColor="#FD1100"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/liveTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Live stream"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/P1Btn"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/P1Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0307FF"
+        android:backgroundTint="#0325FF"
+        android:text="Kamera na ulazu u SUM"
+        android:drawableStart="@drawable/ic_videocam"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/P2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.881"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/P2Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0307FF"
+        android:backgroundTint="#0325FF"
+        android:text="Kamera parkinga"
+        android:drawableStart="@drawable/ic_videocam"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.688"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/refreshBtn"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0325FF"
+        android:drawableStart="@drawable/ic_refresh"
+        android:text="Refresh"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/prikazTxt"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:drawableEnd="@drawable/ic_right"
+        android:text="Za prikaz trenutnog stanja svakoga parkinga kliknite"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/refreshBtn" />
+
+    <TextView
+        android:id="@+id/trenutnostanjeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking SUM"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/prikazTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
