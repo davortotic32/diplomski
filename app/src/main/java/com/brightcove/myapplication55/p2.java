@@ -28,7 +28,7 @@ public class p2 extends AppCompatActivity {
         dateTxt.setText(currentDate);
 
         VideoView player = (VideoView)findViewById(R.id.videoView);
-        String httpLiveUrl = "http://rtmp.smart.sum.ba/stream/4fec9b2d-5907-4378-b481-a69640fa4eba/index.m3u8";
+        String httpLiveUrl = "http://rtmp.smart.sum.ba/stream/bc644d9b-700f-4519-96ce-0d42c7b41740/index.m3u8";
         player.setVideoURI(Uri.parse(httpLiveUrl));
         player.setMediaController(new MediaController(this));
         player.requestFocus();
